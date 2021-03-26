@@ -45,13 +45,13 @@ public class DaftarMahasiswaBerprestasi {
         for (int i = 0; i < (listMhs.length - 1); i++) {
             int idxMin = i;
             for (int j = i + 1; j < listMhs.length; j++) {
-                if (listMhs[j].ipk < listMhs[j - 1].ipk) {
+                if (listMhs[j].ipk < listMhs[idxMin].ipk) {
                     idxMin = j;
                 }
             }
-            double temp = listMhs[i].ipk;
-            listMhs[i].ipk = listMhs[idxMin].ipk;
-            listMhs[idxMin].ipk = temp;
+            Mahasiswa temp= listMhs[i];
+            listMhs[i]= listMhs[idxMin];
+            listMhs[idxMin] = temp;
 
         }
     }
