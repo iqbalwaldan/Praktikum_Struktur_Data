@@ -1,3 +1,5 @@
+package MenjualBarang;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -51,7 +53,6 @@ public class DaftarBarang {
                 }
             }
         }
-
     }
     
     void sortStok(){
@@ -74,5 +75,9 @@ public class DaftarBarang {
             m.tampilBarang();
             System.out.println("----------------------");
         }
+    }
+    
+    void tampilTerlaris() {
+        System.out.println("Barang Terlaris adalah "+listBrg[0].namaBrg+" dengan Jumlah Penjualan adalah "+listBrg[0].jualBrg);
     }
 }

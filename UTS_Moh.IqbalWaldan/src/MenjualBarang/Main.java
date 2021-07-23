@@ -1,3 +1,5 @@
+package MenjualBarang;
+
 // 15_Moh. Iqbal Waldan
 // MI 1F
 
@@ -44,7 +46,8 @@ public class Main {
             case 4:
                 System.out.println("Berikut ini adalah list daftar barang dengan penjualan terbanyak: ");
                 data.sortPenjualan();
-                data.tampil();
+                data.tampilTerlaris();
+                System.out.println("--------------------------------------------");
                 ulang();
                 break;
             case 5:
@@ -133,9 +136,9 @@ public class Main {
         for (int j = 0; j < i; j++) {
             System.out.println("--------------------------------------------");
             total = data.listBrg[beli[j][0]].hargaBrg * beli[j][1];
-            jumlahTotal+=total;
-            System.out.println("Kode\t|Nama\t|Jumlah\t|Harga\t|Total Harga");
-            System.out.printf("%s \t| %s \t| %d \t| %d \t| %d\n", data.listBrg[beli[j][0]].kodeBrg, data.listBrg[beli[j][0]].namaBrg, beli[j][1], data.listBrg[beli[j][0]].hargaBrg, total);
+            jumlahTotal += total;
+            System.out.println("Kode\t|Nama\t\t|Jumlah\t|Harga\t|Total Harga");
+            System.out.printf("%s \t %s \t %d \t %d \t %d\n", data.listBrg[beli[j][0]].kodeBrg, data.listBrg[beli[j][0]].namaBrg, beli[j][1], data.listBrg[beli[j][0]].hargaBrg, total);
         }
         System.out.println("Total Bayar = " + jumlahTotal);
     }

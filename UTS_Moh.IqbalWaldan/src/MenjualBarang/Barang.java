@@ -1,3 +1,5 @@
+package MenjualBarang;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -26,8 +28,7 @@ public class Barang {
 
     void tampilBarang() {
         System.out.println("--------------------------------------------");
-        System.out.println("Kode\t|Nama\t|Stok\t|Harga\t|Jual");
-        System.out.printf("%s \t| %s \t| %d \t| %d \t| %d\n", kodeBrg, namaBrg, stokBrg, hargaBrg,jualBrg);
-        System.out.println("--------------------------------------------");
+        System.out.println("Kode\t|Nama\t\t|Stok\t|Harga");
+        System.out.printf("%s \t %s \t %d \t %d\n", kodeBrg, namaBrg, stokBrg, hargaBrg,jualBrg);
     }
 }
